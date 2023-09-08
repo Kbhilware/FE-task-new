@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=1"
+    />
+    <title>Take home assessment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="child-center pos-relative">Header</header>
+    <main>
+      <section class="baaner pos-relative">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/desktop.jpg" />
+          <source media="(min-width: 1024px)" srcset="img/1024x536.jpg" />
+          <source media="(min-width: 768px)" srcset="img/768x402.jpg" />
+          <source media="(min-width: 320px)" srcset="img/300x157.jpg" />
+          <img
+            class="banner-image"
+            alt="Banner image"
+            width="1024"
+            height="536" 
+            loading="eager"
+            src="img/300x157.jpg"
+          />
+        </picture>
+        <div class="banner-content child-center">
+          <h1>Lorem Ipsum is simply dummy</h1>
+          <button class="banner-btn">click here</button>
+        </div>
+      </section>
+    </main>
+    <footer class="child-center">Footer</footer>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <p>Hello, World</p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

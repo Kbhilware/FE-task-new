@@ -1,0 +1,131 @@
+:root {
+  --banner-overlay: linear-gradient(180deg, rgba(242,190,6,0.4) 100%, rgba(246,123,19,0.7) 0%);
+  --white: #fff;
+  --dark-25:#333;
+}
+html{
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.child-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pos-relative{
+    position: relative;
+}
+header{
+    height: 100px;
+    box-shadow: -1px -3px 16px -2px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+main{
+    height: calc(100vh - 200px);
+    }
+.baaner{
+    height: 100%;
+}
+.banner-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+.banner-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:var(--banner-overlay);
+    color: var(--white);
+    flex-direction: column;
+    padding: 0 16px;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 3rem;
+    margin: 0 0 15px;
+}
+.banner-content button{
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 2px;
+    cursor: pointer;
+    color: inherit;
+}
+.banner-content button::first-letter{
+    text-transform: capitalize;
+}
+footer{
+    height: 100px;
+    background-color:#363839;
+    color: var(--white);
+}
+.hidden {
+  display: none;
+}
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: var(--white);
+  color: var(--dark-25);
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 2rem;
+  color: var(--dark-25);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  background-color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+@media (max-width:767px) {
+ .banner-content h1{
+        font-size: 2rem;
+    }
+.modal {
+    width: 70%;
+}
+}
