@@ -2,6 +2,7 @@
 
 <h4>script.js</h4><br/>
 <ul>
+<li>use strict mode defines that JavaScript code should be executed in "strict mode".</li>
 <li>Show modal with the help of vanilla javascript.<br/></li>
 <li>Select the target classes with the help of querySelector.<br/></li>
 <li>Declear <strong>switchModal</strong> variable to toggle between modal and alert.<br/></li>
