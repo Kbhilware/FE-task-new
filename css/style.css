@@ -64,6 +64,7 @@ main{
     padding-bottom: 2px;
     cursor: pointer;
     color: inherit;
+    outline: unset;
 }
 .banner-content button::first-letter{
     text-transform: capitalize;
@@ -122,10 +123,10 @@ footer{
   z-index: 5;
 }
 @media (max-width:767px) {
- .banner-content h1{
-        font-size: 2rem;
+    .banner-content h1{
+            font-size: 2rem;
+        }
+    .modal {
+        width: 70%;
     }
-.modal {
-    width: 70%;
-}
 }
